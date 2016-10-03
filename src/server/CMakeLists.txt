@@ -29,5 +29,5 @@ install(FILES ${LIB_HEADERS} DESTINATION ${CMAKE_SOURCE_DIR}/include)
 
 set(SOURCE_FILES main.c)
 add_executable(cmake_c_template ${SOURCE_FILES})
-target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_lib)
+target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_lib ${ZeroMQ_LIBRARIES})
 set_target_properties(${PROJECT_NAME}_lib PROPERTIES LINKER_LANGUAGE C)
