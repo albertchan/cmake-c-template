@@ -9,7 +9,7 @@ project(${PROJECT_NAME})
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 
 # Include paths
-set(INCLUDE_DIRS ${INCLUDE_DIRS} ${CMAKE_SOURCE_DIR}/include/sds)
+set(INCLUDE_DIRS ${INCLUDE_DIRS} ${CMAKE_SOURCE_DIR}/include/sds ${ZeroMQ_INCLUDE_DIR})
 
 # Assign the include directories
 include_directories(${INCLUDE_DIRS})
